@@ -72,6 +72,6 @@ jobs:
         with:
           namespace: 'http-status'
           manifests: |
-            http-status.yaml
+            k8s/http-status.yaml
           images: ghcr.io/kanja22/http-status:${{ needs.build.outputs.tag }}
           kubectl-version: 'latest'
