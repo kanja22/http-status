@@ -66,7 +66,7 @@ jobs:
         with:
           method: service-account
           k8s-url: ${{ secrets.K8S_MACY_URL }}
-          k8s-secret: ${{ secrets.K8S_MACY_HSSB }}
+          k8s-secret: ${{ secrets.K8S_MACY_TOKEN }}
 
       - uses: Azure/k8s-deploy@v1.4
         with:
