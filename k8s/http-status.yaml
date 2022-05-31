@@ -48,6 +48,7 @@ metadata:
     traefik.ingress.kubernetes.io/redirect-entry-point: https
     cert-manager.io/cluster-issuer: letsencrypt-prod
 spec:
+  ingressClassName: nginx
   tls:
   - hosts:
     - http-status.http-status.cloud.ak-online.be
